@@ -30,5 +30,5 @@ https://roadmap.sh/projects/basic-html-website
 Primero, clona el repositorio en tu máquina local utilizando Git:
 
 ```bash
-git clone https://github.com/MatiasCardoso4/Cv-page
+git clone https://github.com/MatiasCardoso4/Basic-HTML-Website
 ```
