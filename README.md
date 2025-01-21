@@ -1,10 +1,11 @@
-# CV PAGE
+# Personal Portfolio
 
 Este es un proyecto de una página web basica, donde se puede navegar atraves de links por las distintas secciones de la misma.
 
 ## Tecnologías Utilizadas
 
 - HTML
+- CSS
 - Open Graph Tags para compartir en redes sociales
 
 ## Instrucciones para Correr el Proyecto
@@ -22,7 +23,7 @@ Opción 2: Usar un servidor local (opcional)
 # URL del proyecto
 
 ```bash
-https://roadmap.sh/projects/basic-html-website
+https://roadmap.sh/projects/portfolio-website
 ```
 
 ### 1. Clonar el Repositorio
@@ -30,5 +31,5 @@ https://roadmap.sh/projects/basic-html-website
 Primero, clona el repositorio en tu máquina local utilizando Git:
 
 ```bash
-git clone https://github.com/MatiasCardoso4/Basic-HTML-Website
+git clone https://github.com/MatiasCardoso4/Personal-Portfolio
 ```
