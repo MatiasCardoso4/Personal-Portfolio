@@ -53,7 +53,7 @@ main {
 .page-title,
 .projects-title,
 .experience-title,
-.education-title {
+.education-title, .second-job-name {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
@@ -105,47 +105,59 @@ main {
   margin-bottom: 90px;
 }
 
-
 .experience {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 20vw;
-  height: 100%;
   border-right: 1px solid black;
   margin-left: -25px;
 }
 
-.experience > .first-job:first-child {
+.experience>.first-job:first-child {
   border-bottom: 1px solid black;
 }
 
-.experience > div {
-  display: flex;
-  flex-direction: column;
-
+.experience>.first-job {
+  height: 100%;
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
-
-.experience > .first-job {
-
-padding-left: 20px;
-padding-bottom: 30px;
-}
-
-
-.experience > .first-job > p {
+.experience>.first-job>p {
   margin-bottom: 4px;
+}
+
+.experience .experience-title{
+  margin-bottom: 16px;
 }
 
 .experience .first-job p:nth-child(2) {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.experience>.first-job >span >a ,.experience > .second-job > span > a {
+  text-decoration: none;
+  color: rgb(79, 168, 241);
+}
 
 
-.experience .second-job {
-height: 33%;
+.experience > .second-job {
+  height: 100%;
+  padding-left: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience > .second-job > .second-job-name {
+margin-top: -22px;
+margin-bottom: 10px;
+}
+
+.experience > .second-job >  p{
+  width: 80%;
+  margin-bottom: 6px;
 }
 
 .education {
