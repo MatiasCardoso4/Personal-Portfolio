@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -16,14 +15,12 @@ body {
   font-weight: 600;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
   height: 100px;
   padding: 25px;
 }
-
 
 header>nav>ul {
   display: flex;
@@ -37,8 +34,6 @@ header>nav>ul>li>a {
   color: #000;
 }
 
-
-
 h1 {
   text-align: center;
   font-size: 40px;
@@ -46,14 +41,17 @@ h1 {
 
 main {
   width: 50%;
-  border: 2px solid black;
   min-height: 100vh;
+  border: 2px solid black;
 }
 
 .page-title,
 .projects-title,
 .experience-title,
-.education-title, .second-job-name {
+.education-title,
+.second-job-name,
+.reviews-title,
+.copyright {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
@@ -63,23 +61,21 @@ main {
   margin-top: 70px;
   height: 100%;
   border: 1px solid black;
-}
 
+}
 
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 12vw;
+  width: 14vw;
   border-right: 1px solid black;
 }
 
-
 .projects .projects-title {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
-
 
 .projects>ul {
   display: flex;
@@ -92,8 +88,6 @@ main {
 .projects>ul>li:first-child {
   margin-top: 20px;
 }
-
-
 
 .projects>ul>li {
   border-bottom: 1px solid black;
@@ -109,9 +103,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 20vw;
+  width: 22vw;
   border-right: 1px solid black;
-  margin-left: -25px;
 }
 
 .experience>.first-job:first-child {
@@ -128,7 +121,7 @@ main {
   margin-bottom: 4px;
 }
 
-.experience .experience-title{
+.experience .experience-title {
   margin-bottom: 16px;
 }
 
@@ -136,13 +129,13 @@ main {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.experience>.first-job >span >a ,.experience > .second-job > span > a {
+.experience>.first-job>span>a,
+.experience>.second-job>span>a {
   text-decoration: none;
   color: rgb(79, 168, 241);
 }
 
-
-.experience > .second-job {
+.experience>.second-job {
   height: 100%;
   padding-left: 20px;
   margin-top: 40px;
@@ -150,16 +143,74 @@ main {
   flex-direction: column;
 }
 
-.experience > .second-job > .second-job-name {
-margin-top: -22px;
-margin-bottom: 10px;
+.experience>.second-job>.second-job-name {
+  margin-top: -22px;
+  margin-bottom: 10px;
 }
 
-.experience > .second-job >  p{
+.experience>.second-job>p {
   width: 80%;
   margin-bottom: 6px;
 }
 
 .education {
-  width: 33%;
+  width: 20vw;
+  padding: 20px 10px 20px 20px;
+
+}
+
+.education>p:nth-child(2) {
+  width: 80%;
+}
+
+.education>.courses-list>p {
+  margin-bottom: 20px;
+}
+
+.education>.courses-list {
+  margin-top: 12px;
+}
+
+.education>.courses-list>ul>li {
+  list-style: none;
+  margin-left: 2px;
+}
+
+.education>.courses-list>ul>li::before {
+  content: '- '
+}
+
+.reviews {
+  min-height: 65vh;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.comentaries {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.comentaries article {
+  border: 2px solid black;
+  padding-top: 20px;
+  padding-left: 15px;
+  height: 20vh;
+  border-radius: 32px;
+}
+
+.comentaries>.comentary-card p:nth-child(2),.comentaries>.comentary-card p:nth-child(3) {
+  color: rgb(189, 188, 188);
+}
+
+.comentaries>.comentary-card p:nth-child(2) {
+  margin-top: 12px;
+}
+
+.copyright {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 22px;
 }
