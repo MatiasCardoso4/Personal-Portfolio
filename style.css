@@ -107,23 +107,26 @@ main {
   border-right: 1px solid black;
 }
 
-.experience>.first-job:first-child {
+.experience-title{
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.experience>.first-job:nth-child(2) {
   border-bottom: 1px solid black;
 }
 
 .experience>.first-job {
   height: 100%;
   padding-left: 20px;
-  margin-top: 10px;
 }
 
 .experience>.first-job>p {
   margin-bottom: 4px;
 }
 
-.experience .experience-title {
-  margin-bottom: 16px;
-}
 
 .experience .first-job p:nth-child(2) {
   font-family: 'Gloria Hallelujah', cursive;
@@ -139,6 +142,7 @@ main {
   height: 100%;
   padding-left: 20px;
   margin-top: 40px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -156,7 +160,11 @@ main {
 .education {
   width: 20vw;
   padding: 20px 10px 20px 20px;
+}
 
+.education-title {
+  margin-bottom: 12px;
+  margin-top: -4px;
 }
 
 .education>p:nth-child(2) {
@@ -195,22 +203,190 @@ main {
 
 .comentaries article {
   border: 2px solid black;
-  padding-top: 20px;
+
   padding-left: 15px;
   height: 20vh;
   border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.comentaries>.comentary-card p:nth-child(2),.comentaries>.comentary-card p:nth-child(3) {
+.comentaries>.comentary-card .professor-info:nth-child(2),
+.comentaries>.comentary-card .professor-info:nth-child(3) {
   color: rgb(189, 188, 188);
 }
 
-.comentaries>.comentary-card p:nth-child(2) {
-  margin-top: 12px;
-}
 
 .copyright {
   margin-top: 80px;
   text-align: center;
   font-size: 22px;
+}
+
+/* Contact Page */
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-section>p {
+  font-size: 22px;
+  margin-top: 50px;
+  width: 30%;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact-form>input[type='email'] {
+  width: 300px;
+  padding: 4px;
+}
+
+.contact-form>textarea {
+  width: 300px;
+  height: 100px;
+  padding: 4px;
+}
+
+.contact-form>button[type='submit'] {
+  padding: 10px 20px;
+  background-color: rgb(79, 168, 241);
+  color: rgb(15, 15, 15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 70%;
+  }
+
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 14px;
+  }
+
+  header nav ul a{
+    width: 100%;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .projects {
+    text-align: center;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .projects>ul>li:first-child {
+    border-top: 1px solid black;
+    padding-top: 10px;
+  }
+
+  .projects>ul>li:last-child {
+    margin-bottom: 0;
+  }
+
+  .experience {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .experience>.experience-title {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+
+
+  .experience .first-job {
+    border-bottom: 1px solid black;
+    padding-bottom: 14px;
+  }
+
+  .experience .second-job {
+    padding-bottom: 14px;
+  }
+
+  .education {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .education-title {
+    text-align: center;
+    padding-bottom: 14px;
+  }
+
+  .education>p:nth-child(2) {
+    width: 100%;
+  }
+
+  .reviews {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 10vh;
+  }
+
+
+  .reviews > .comentaries > .comentary-card{
+    padding-right: 20px;
+  }
+
+  .reviews>.comentaries>.comentary-card:nth-child(2),
+  .reviews>.comentaries>.comentary-card:nth-child(3) {
+    display: none;
+  }
+
+  .comentaries {
+    flex-direction: column;
+  }
+
+  .comentaries article {
+    height: 18vh;
+  }
+
+  .copyright{
+    font-size: 4vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-section>p {
+    width: 70%;
+  }
+
+  .contact-form>input[type='email'],
+  .contact-form>textarea {
+    width: 70%;
+  }
+
+  .contact-form>button[type='submit'] {
+    width: 70%;
+  }
 }
